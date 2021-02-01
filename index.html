@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>momentum</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./src/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class="js-clock clock">
+                <h1>00:00</h1>
+            </div>
+
+            <form class='js-inputForm inputForm'>
+                <input type='text' placeholder="What is your name?" class='inputName'/>
+            </form>
+            <h1 class='js-greeting greeting'></h1>
+
+            <div class='js-weatherGeo weatherGeo'>
+                <span class='js-weather'></span>
+                <span class='js-geo'></span>
+            </div>    
+            <form class="js-toDo">
+                <input type="text" placeholder="Add toDo" class='js-toDoInput toDoInput'/>
+            </form>
+ 
+            <form>
+                <input type='button' value='show what you finished' class='btn' id='showFinishedBtn'/>
+                <input type="button" class='btn' id='clockChangeBtn'/>
+            </form>
+            
+            <div class='toDoListGrid'>
+                
+                <span class="js-toDo__pending grid_item pending">
+                    <h2 class='toDoListTitle'>To Do list</h2>
+                    <ul></ul>
+                </span>
+                <span class="js-toDo__finished grid_item finished">
+                    <h2 class='toDoListTitle'>What you finished</h2> 
+                    <ul></ul>
+                </span>
+            </div>
+        </div>
+
+        <script src='src/clock.js'></script>
+        <script src='src/greeting.js'></script>
+        <script src='src/toDo.js'></script>
+        <script src='src/background.js'></script>
+        <script src='src/weatherGeo.js'></script>
+        <script src="src/index.js"></script>
+    </body>
+</html>
